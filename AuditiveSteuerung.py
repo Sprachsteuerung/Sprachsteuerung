@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-from vosk import KaldiRecognizer, vosk                              #Von dem Modul Vosk Lade KaldiRecognizer und Vosk    
+import vosk                                                         #Importiere Vosk STT-Engine
+from vosk import KaldiRecognizer                                    #Von dem Modul Vosk Lade KaldiRecognizer  
 import os                                                           #Importierte Betriebssystem
-import pyaudio                                                      #importiere pyaudio python Audioausgabe
+import pyaudio                                                      #Importiere pyaudio python Audioausgabe
 import json                                                         #JSON Funktion zur Decodierung
 import pyttsx3                                                      #Text-to-Speech Engine
 from gpiozero import LED, Button                                    #Von dem Modul GPIOZERO lade die Funktion LED und Button   
