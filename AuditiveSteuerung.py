@@ -55,7 +55,7 @@ while True:
         msg = you                                                   #Zurodnungs msg=you
         
         if "manfred" in you:                                        #Wenn der name Mannfred in der Spracheingabe vorkommt 
-            msg = "was kann ich für dich tun?"                      #Sprachausgabe Antwortet mit dem " " Inhalt
+            msg = "Was kann ich für dich tun?"                      #Sprachausgabe Antwortet mit dem " " Inhalt
             need_speak = True                                       #Zustandvariable = Es muss etwas gesagt werden    
           
             if "hallo" in you:                                  
@@ -75,7 +75,7 @@ while True:
                     msg = "Der Wasserbehälter ist Leer"             #Antworte "Der Wasserbehälter ist Leer"
                     need_speak = True                               #Zustandvariable = Es muss etwas gesagt werden   
                 else:                                               #Ansonsten
-                    pi_mouth2.say("ich Heize die maschine auf")     #Antworte "ich Heize die maschine auf"
+                    pi_mouth2.say("Ich Heize die maschine auf")     #Antworte "ich Heize die maschine auf"
                     pi_mouth2.runAndWait()                          #Sprachausgabe wartet auf Anweisungen
                     sleep(2.0)                                      #warte 2 Sekunden
                     while heat.is_active == True:                   #solange Button heat Zustand 1 hat warte in der schleife
@@ -89,7 +89,7 @@ while True:
                     power.on()                                      #Setze GPIO.power auf Zustand 1
                     sleep(0.5)                                      #Warte 0,5 Sekunden
                     power.off()                                     #Setze GPIO.power auf Zustand 0
-                    msg = "der Kaffee ist fertig"                   #Antworte "der Kaffee ist fertig" 
+                    msg = "Der Kaffee ist fertig"                   #Antworte "der Kaffee ist fertig" 
                     need_speak = True                               #Zustandvariable = Es muss etwas gesagt werden  
                     
             if "zwei kaffee" in you:                                #Ablauf für zwei Tassen Kaffee  
@@ -104,7 +104,7 @@ while True:
                     msg = "Der Wasserbehälter ist Leer"
                     need_speak = True
                 else:
-                    pi_mouth2.say("ich Heize die maschine auf")
+                    pi_mouth2.say("Ich Heize die maschine auf")
                     pi_mouth2.runAndWait()
                     sleep(2.0)
                     while heat.is_active == True:
@@ -118,7 +118,7 @@ while True:
                     power.on()
                     sleep(0.5)
                     power.off()
-                    msg = "der Kaffee ist fertig"
+                    msg = "Der Kaffee ist fertig"
                     need_speak = True
                 
             if "wiedersehen" in you:                                 #Wenn "wiedersehen" im gesprochenen vorkommt
