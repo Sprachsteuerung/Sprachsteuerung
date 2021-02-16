@@ -57,12 +57,15 @@ while True:
         if "manfred" in you:                                        #Wenn der name Mannfred in der Spracheingabe vorkommt 
             msg = "Was kann ich für dich tun?"                      #Sprachausgabe Antwortet mit dem " " Inhalt
             need_speak = True                                       #Zustandvariable = Es muss etwas gesagt werden    
-          
-            if "hallo" in you:                                  
-                print("Hallo, wie gehts es dir mein Meister und Gebieter?")
-                msg = "Hallo, wie gehts es dir mein Meister und Gebieter?"
+            
+            if "" in you:                                  
+                msg = "Ich konnte dich nicht verstehen."
                 need_speak = True
-                
+                          
+            if "hallo" in you:                                  
+                msg = "Hallo, wie gehts es dir?"
+                need_speak = True
+                   
             if "einen kaffee" in you:                               #Wenn "einen kaffee" im gesprochenen vorkommt
                 power.on()                                          #Setze GPIO.power auf Zustand 1
                 sleep(0.5)                                          #Warte 0,5 Sekunden
