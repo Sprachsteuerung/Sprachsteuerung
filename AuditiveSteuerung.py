@@ -121,7 +121,7 @@ while True:
                     msg = "der Kaffee ist fertig"
                     need_speak = True
                 
-            if "wiedersehen" in you:                                  #Wenn "wiedersehen" im gesprochenen vorkommt
+            if "wiedersehen" in you:                                 #Wenn "wiedersehen" im gesprochenen vorkommt
                 msg = "Dankeschön"                                   #Antworte "Dankeschön"
                 print("\033[0;32myou:\033[0m " + you)                #print das gesprochene Wort (you) in Grün  
                 print("\033[0;35mpi:\033[0m " + msg)                 #print die Antwort (msg) in Lila
