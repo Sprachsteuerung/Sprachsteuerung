@@ -4,8 +4,6 @@ sudo apt install python-gpiozero libespeak1 -y
 pip3 install pyttsx3  	
 pip3 install vosk
 pip3 install pyaudio
-cd
-cd AuditiveSteuerung
 wget https://alphacephei.com/vosk/models/vosk-model-small-de-zamia-0.3.zip
 unzip vosk-model-small-de-zamia-0.3.zip
 sudo mv vosk-model-small-de-zamia-0.3 model
