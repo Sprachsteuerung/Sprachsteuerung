@@ -4,7 +4,7 @@ sudo apt install python-gpiozero libespeak1 -y
 pip3 install pyttsx3  	
 pip3 install vosk
 pip3 install pyaudio
-cd AuditiveSteuerung
+cd Sprachsteuerung
 wget https://alphacephei.com/vosk/models/vosk-model-small-de-0.15.zip
 unzip vosk-model-small-de-0.15.zip
 sudo mv vosk-model-small-de-0.15 model
