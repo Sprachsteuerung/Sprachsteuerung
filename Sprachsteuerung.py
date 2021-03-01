@@ -78,7 +78,7 @@ while True:
                     msg = "Der Wasserbehälter ist Leer"             #Antworte "Der Wasserbehälter ist Leer"
                     need_speak = True                               #Zustandvariable = Es muss etwas gesagt werden   
                 else:                                               #Ansonsten
-                    pi_mouth2.say("Ich Heize die maschine auf")     #Antworte "ich Heize die maschine auf"
+                    pi_mouth2.say("Ich Heize die Maschine auf")     #Antworte "ich Heize die maschine auf"
                     pi_mouth2.runAndWait()                          #Sprachausgabe wartet auf Anweisungen
                     sleep(2.0)                                      #warte 2 Sekunden
                     while heat.is_active == True:                   #solange Button heat Zustand 1 hat warte in der schleife
@@ -107,7 +107,7 @@ while True:
                     msg = "Der Wasserbehälter ist Leer"
                     need_speak = True
                 else:
-                    pi_mouth2.say("Ich Heize die maschine auf")
+                    pi_mouth2.say("Ich Heize die Maschine auf")
                     pi_mouth2.runAndWait()
                     sleep(2.0)
                     while heat.is_active == True:
